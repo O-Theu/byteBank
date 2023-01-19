@@ -1,4 +1,6 @@
 ﻿using bytebank_ADM.Funcionarios;
+using bytebank_ADM.Parceria;
+using bytebank_ADM.SistemaInterno;
 using bytebank_ADM.Utilitario;
 using System.Security.Cryptography.X509Certificates;
 
@@ -33,7 +35,7 @@ internal class Program
         //Console.WriteLine($"Salario do pedro: {pedro.Salario}");
         #endregion
 
-        CalcularBonificacao();
+        //CalcularBonificacao();
 
         void CalcularBonificacao()
         {
@@ -57,6 +59,31 @@ internal class Program
             gerenciador.Registrar(paula);
 
             Console.WriteLine($"Total das bonificações: {gerenciador.TotalBonificacao}");
+        }
+
+        UsarSistema();
+
+        void UsarSistema()
+        {
+            SistemaInterno sistema = new SistemaInterno();
+
+            Diretor ingrid = new Diretor("123098");
+            ingrid.Nome = "Ingrid Silvas";
+            ingrid.Senha = "123";
+
+            GerenteDeContas Douglas = new GerenteDeContas("147258");
+            Douglas.Nome = "Douglas Ferreira";
+            Douglas.Senha = "321";
+
+            sistema.Logar(ingrid, "123");
+
+            sistema.Logar(Douglas, "321");
+
+            ParceiroComercial jonas = new ParceiroComercial();
+            jonas.Senha = "999";
+
+            sistema.Logar(jonas, "999");
+
         }
     }
 }
