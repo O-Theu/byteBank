@@ -47,7 +47,7 @@ namespace csharp_exception.Contas
             }
             else
             {
-                return false;
+                throw new SaldoInsuficienteException("Saldo insuficiente");
             }
         }
 
@@ -92,7 +92,8 @@ namespace csharp_exception.Contas
                 throw new ArgumentException("Número de agência menor ou igual a zero!", nameof(numero_agencia));
             }
 
-            /*
+            TotalDeContasCriadas++; 
+
             try
             {
                 TaxaOperacao = 30 / TotalDeContasCriadas;
@@ -100,9 +101,9 @@ namespace csharp_exception.Contas
             catch (DivideByZeroException)
             {
                 Console.WriteLine("Ocorreu um erro! Não é possível fazer uma divisão por zero!");
-            }          
-            */
-            TotalDeContasCriadas++;
+            }
+
+            
         }
 
 
