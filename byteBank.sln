@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bytebank_ADM", "bytebank_AD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "csharp_exception", "csharp_exception\csharp_exception.csproj", "{FB802DC5-F905-4A7E-A0EA-17C4BB535001}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bytebank_ATENDIMENTO", "bytebank_ATENDIMENTO\bytebank_ATENDIMENTO.csproj", "{D1D59289-0F82-4D45-8439-E0446AE000DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FB802DC5-F905-4A7E-A0EA-17C4BB535001}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB802DC5-F905-4A7E-A0EA-17C4BB535001}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB802DC5-F905-4A7E-A0EA-17C4BB535001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1D59289-0F82-4D45-8439-E0446AE000DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1D59289-0F82-4D45-8439-E0446AE000DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1D59289-0F82-4D45-8439-E0446AE000DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1D59289-0F82-4D45-8439-E0446AE000DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
