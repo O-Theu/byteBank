@@ -1,5 +1,5 @@
 ﻿using bytebank.Modelos.ADM.SistemaInterno;
-
+using bytebank_Modelos.bytebank.Modelos.ADM.Utilitario;
 
 namespace bytebank.Modelos.ADM.Funcionarios
 {
@@ -12,10 +12,10 @@ namespace bytebank.Modelos.ADM.Funcionarios
         {
 
         }
-
+        public AutenticavelUtil Autenticador { get; set; }
         public bool Autenticar(string senha)
         {
-            return Senha == senha;
+            return this.Autenticador.ValidarSenha(this.Senha, senha);
         }
     }
 }
